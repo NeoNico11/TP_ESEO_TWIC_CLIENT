@@ -1,0 +1,65 @@
+/* Applique un style de base pour tout le document */
+* {
+    box-sizing: border-box;
+    margin: 0;
+    padding: 0;
+}
+
+/* Définit un style pour le corps de la page */
+body {
+    font-family: sans-serif;
+    font-size: 16px;
+    line-height: 1.5;
+    color: #333;
+    background-color: #f7f7f7;
+}
+
+/* Applique un style à la section principale */
+main {
+    max-width: 800px;
+    margin: 0 auto;
+    padding: 40px;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+}
+
+/* Applique un style à la liste des liens */
+ul {
+    list-style: none;
+    margin-top: 20px;
+    display: flex;
+    justify-content: center;
+}
+
+/* Applique un style à chaque élément de la liste */
+li {
+    margin-right: 20px;
+}
+
+/* Applique un style au pied de page */
+footer {
+    background-color: #333;
+    color: #fff;
+    text-align: center;
+    padding: 20px;
+}
+
+a {
+    display: inline-block;
+    font-size: 20px;
+    color: #333;
+    text-decoration: none;
+    margin-right: 20px;
+    margin-bottom: 10px;
+    padding: 10px;
+    border: 1px solid #ccc;
+    border-radius: 5px;
+    transition: all 0.3s ease-in-out;
+}
+
+a:hover {
+    background-color: #f7f7f7;
+    border-color: #999;
+}

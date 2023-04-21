@@ -1,0 +1,82 @@
+@charset "UTF-8";
+
+/* Applique un style de base pour tout le document */
+* {
+    box-sizing: border-box;
+    margin: 0;
+    padding: 0;
+}
+
+/* Définit un style pour le corps de la page */
+body {
+    font-family: sans-serif;
+    font-size: 16px;
+    line-height: 1.5;
+    color: #333;
+    background-color: #f7f7f7;
+}
+
+/* Applique un style au titre principal */
+h1 {
+    font-size: 32px;
+    margin-top: 40px;
+    margin-bottom: 20px;
+    text-align: center;
+}
+
+/* Applique un style à la table */
+table {
+    border-collapse: collapse;
+    width: 100%;
+    max-width: 1200px;
+    margin: 0 auto;
+}
+
+/* Applique un style à l'en-tête de la table */
+th {
+    background-color: #333;
+    color: #fff;
+    text-align: left;
+    padding: 10px;
+}
+
+/* Applique un style aux cellules de la table */
+td {
+    border: 1px solid #ccc;
+    padding: 10px;
+}
+
+/* Applique un style aux boutons de la pagination */
+input[type="submit"] {
+    background-color: #333;
+    color: #fff;
+    border: none;
+    padding: 10px 20px;
+    margin-right: 10px;
+    cursor: pointer;
+}
+
+/* Applique un style au pied de page */
+#footer {
+    max-width: 800px;
+    margin: 20px auto 0;
+    text-align: center;
+}
+
+a {
+    display: inline-block;
+    font-size: 20px;
+    color: #333;
+    text-decoration: none;
+    margin-right: 20px;
+    margin-bottom: 10px;
+    padding: 10px;
+    border: 1px solid #ccc;
+    border-radius: 5px;
+    transition: all 0.3s ease-in-out;
+}
+
+a:hover {
+    background-color: #f7f7f7;
+    border-color: #999;
+}

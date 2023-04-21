@@ -1,0 +1,31 @@
+<!DOCTYPE html>
+<html xmlns:th="http://www.thymeleaf.org">
+<head>
+    <title>TWIC - Villes</title>
+    <link rel="stylesheet" th:href="@{/css/villeStyle.css}">
+<body>
+        <h1>Liste des villes</h1>
+    <table>
+        <tr>
+            <th>Commune</th>
+            <th>Code Postal</th>
+        </tr>
+        <th:block th:each="ville : ${villes}">
+            <tr>
+                <td th:text="${ville.getNomCommune()}"></td>
+                <td th:text="${ville.getCodePostal()}"></td>
+            </tr>
+        </th:block>
+    </table>
+
+    <div id="footer">
+        <form method="get">
+            <th:block th:each="i: ${#numbers.sequence(1, pages)}">
+                <input type="submit" name="page" id="numPage" th:value="${i}">
+            </th:block>
+        </form>
+    </div>
+    
+    <a th:href="@{/}">Retour</a>
+</body>
+</html>

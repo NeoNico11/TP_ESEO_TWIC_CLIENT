@@ -1,0 +1,28 @@
+<!DOCTYPE html>
+<html lang="fr" xmlns:th="http://www.thymeleaf.org">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>TWIC - Accueil</title>
+    <!-- Lien vers le fichier CSS -->
+    <link rel="stylesheet" th:href="@{/css/accueilStyle.css}">
+</head>
+<body>
+    <!-- Section principale -->
+    <main>
+        <h1>Projet TWIC</h1>
+        <p>Bienvenue sur le site de mon projet TWIC !</p>
+        <p>Vous trouverez ci-dessous les liens vers les différentes fonctionnalités de mon application :</p>
+
+        <ul>
+            <li><a th:href="@{/villes}">Liste des villes</a></li>
+            <li><a th:href="@{/distance}">Calcul de la distance</a></li>
+        </ul>
+    </main>
+
+    <!-- Pied de page -->
+    <footer>
+        <p>&copy; 2023 Projet TWIC</p>
+    </footer>
+</body>
+</html>

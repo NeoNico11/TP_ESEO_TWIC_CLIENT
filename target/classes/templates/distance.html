@@ -1,0 +1,27 @@
+<!DOCTYPE html>
+<html xmlns:th="http://www.thymeleaf.org">
+<head>
+    <title>TWIC - Distance</title>
+    <link rel="stylesheet" th:href="@{/css/distanceStyle.css}">
+</head>
+<body>
+    <h1>Calcul de la distance</h1>
+        <form action="distance" method="post">
+            <select name="ville1">
+                <th:block th:each="ville : ${villes}">
+                    <option th:value="${ville.getCodePostal()}" th:text="${ville.getNomCommune()}"></option>
+                </th:block>
+            </select>
+            <select name="ville2">
+                <th:block th:each="ville : ${villes}">
+                    <option th:value="${ville.getCodePostal()}" th:text="${ville.getNomCommune()}"></option>
+                </th:block>
+            </select>
+            <input type="submit" value="Calculer" />
+        </form>
+    <th:block th:if="${distance != null}">
+        <p th:text="${'La distance entre ' + ville1.getNomCommune() + ' et ' + ville2.getNomCommune() + ' est de ' + distance + ' km'}"></p>
+    </th:block>
+    <a th:href="@{/}">Retour</a>
+</body>
+</html>
